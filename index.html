@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFETRAF-BRASIL | Confederação Nacional da Agricultura Familiar</title>
+    <!-- Tailwind CSS para um visual moderno e rápido sem precisar de arquivos CSS separados -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        .bg-rural-green { bg-color: #1b4d3e; }
+        .text-rural-green { color: #1b4d3e; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- CADASTRAR TOPO / MENU -->
+    <header class="bg-[#1b4d3e] text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white p-2 rounded-full text-[#1b4d3e] text-2xl font-bold w-12 h-12 flex items-center justify-center shadow">
+                    🌾
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide leading-tight">CONFETRAF-BRASIL</h1>
+                    <p class="text-xs text-green-200 hidden sm:block">Confederação Nacional dos Trabalhadores e Trabalhadoras da Agricultura Familiar</p>
+                </div>
+            </div>
+            
+            <!-- Menu de Navegação -->
+            <nav class="mt-4 md:mt-0 w-full md:w-auto">
+                <ul class="flex flex-wrap gap-4 justify-center md:justify-end font-medium text-sm">
+                    <li><a href="index.html" class="text-yellow-400 border-b-2 border-yellow-400 pb-1">Início</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Quem Somos</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Federações</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Documentos</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL / DESTAQUE -->
+    <section class="bg-gradient-to-r from-[#1b4d3e] to-[#2d6a4f] text-white py-16 px-4">
+        <div class="container mx-auto text-center max-w-3xl">
+            <span class="bg-yellow-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Site Oficial</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">
+                Fortalecendo a Agricultura Familiar, Alimentando o Brasil.
+            </h2>
+            <p class="text-lg text-green-100 mb-8">
+                Representando e defendendo os direitos e conquistas dos trabalhadores e trabalhadoras do campo em todo o território nacional.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-slate-950 font-bold px-6 py-3 rounded-lg shadow-lg transition flex items-center gap-2">
+                    <i class="fas fa-file-alt"></i> Ver Editais e Atas
+                </a>
+                <a href="#" class="bg-transparent border-2 border-white hover:bg-white hover:text-[#1b4d3e] text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
+                    <i class="fas fa-info-circle"></i> Conhecer Nossa História
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container mx-auto px-4 py-12 flex-grow grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- COLUNA DA ESQUERDA: NOTÍCIAS (2 colunas de largura no desktop) -->
+        <div class="lg:col-span-2 space-y-8">
+            <div class="flex items-center justify-between border-b-2 border-gray-200 pb-3">
+                <h3 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                    <i class="fas fa-newspaper text-[#1b4d3e]"></i> Últimas Notícias
+                </h3>
+                <a href="#" class="text-sm font-semibold text-[#1b4d3e] hover:underline">Ver todas →</a>
+            </div>
+
+            <!-- Grid de Cartões de Notícias -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Notícia 1 -->
+                <article class="bg-white rounded-xl shadow overflow-hidden hover:shadow-md transition">
+                    <div class="h-48 bg-gray-300 bg-cover bg-center flex items-center justify-center text-gray-500">
+                        <i class="far fa-image text-3xl"></i> <!-- Espaço para foto do CMS -->
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-gray-500 font-semibold block mb-2"><i class="far fa-calendar-alt"></i> 19 de Agosto de 2026</span>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 hover:text-[#1b4d3e] transition">
+                            <a href="#">CONFETRAF participa de conferência nacional sobre produção sustentável</a>
+                        </h4>
+                        <p class="text-gray-600 text-sm line-clamp-3">
+                            Debates focaram no fomento ao crédito para pequenos produtores e novos incentivos para transição agroecológica na agricultura familiar.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Notícia 2 -->
+                <article class="bg-white rounded-xl shadow overflow-hidden hover:shadow-md transition">
+                    <div class="h-48 bg-gray-300 bg-cover bg-center flex items-center justify-center text-gray-500">
+                        <i class="far fa-image text-3xl"></i> <!-- Espaço para foto do CMS -->
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-gray-500 font-semibold block mb-2"><i class="far fa-calendar-alt"></i> 15 de Agosto de 2026</span>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 hover:text-[#1b4d3e] transition">
+                            <a href="#">Assembleia Geral aprova planejamento estratégico para o próximo biênio</a>
+                        </h4>
+                        <p class="text-gray-600 text-sm line-clamp-3">
+                            Reunião com lideranças sindicais de diversos estados homologou as novas diretrizes de atuação em defesa do trabalhador do campo.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- COLUNA DA DIREITA: LATERAL / ACESSOS RÁPIDOS (1 coluna de largura) -->
+        <aside class="space-y-6">
+            <!-- Bloco Documentos Úteis -->
+            <div class="bg-white rounded-xl shadow p-6 border-t-4 border-yellow-500">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <i class="fas fa-folder-open text-[#1b4d3e]"></i> Acesso Rápido
+                </h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 text-gray-700 hover:text-[#1b4d3e] transition font-medium">
+                            <i class="fas fa-file-pdf text-red-500 text-lg"></i> Estatuto da CONFETRAF
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 text-gray-700 hover:text-[#1b4d3e] transition font-medium">
+                            <i class="fas fa-file-invoice text-blue-500 text-lg"></i> Último Edital Publicado
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 text-gray-700 hover:text-[#1b4d3e] transition font-medium">
+                            <i class="fas fa-book-open text-green-600 text-lg"></i> Cartilhas e Orientações
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bloco Institucional / Contato Rápido -->
+            <div class="bg-[#1b4d3e] text-white rounded-xl shadow p-6">
+                <h3 class="text-lg font-bold mb-3">CONFETRAF-BRASIL</h3>
+                <p class="text-sm text-green-100 mb-4">
+                    Confederação Nacional dos Trabalhadores e Trabalhadoras da Agricultura Familiar do Brasil.
+                </p>
+                <div class="space-y-2 text-sm text-green-200">
+                    <p class="flex items-center gap-2"><i class="fas fa-envelope"></i> contato@confetraf.org.br</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-phone"></i> (00) 0000-0000</p>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class="bg-gray-900 text-gray-400 text-sm py-8 mt-auto border-t border-gray-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <p class="font-bold text-white">CONFETRAF-BRASIL</p>
+                <p class="text-xs mt-1">&copy; 2026 Todos os direitos reservados. Agricultura Familiar Forte.</p>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="flex gap-4 text-lg">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
