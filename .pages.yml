@@ -1,0 +1,97 @@
+# Configuração do Pages CMS para a CONFETRAF-BRASIL
+media:
+  input: assets/images
+  output: /assets/images
+
+collections:
+  - name: noticias
+    label: Notícias e Imprensa
+    description: Publique notícias, artigos e comunicados sobre a agricultura familiar.
+    type: folder
+    path: _noticias
+    extension: md
+    format: frontmatter
+    fields:
+      - name: title
+        label: Título da Notícia
+        type: string
+        required: true
+      - name: date
+        label: Data de Publicação
+        type: date
+        required: true
+      - name: image
+        label: Imagem de Destaque
+        type: image
+      - name: resume
+        label: Resumo da Notícia (Aparece na Home)
+        type: text
+      - name: body
+        label: Conteúdo Completo da Notícia
+        type: rich-text
+
+  - name: documentos
+    label: Documentos e Editais
+    description: Cadastro de atas, resoluções de congressos e cartilhas informativas.
+    type: folder
+    path: _documentos
+    extension: md
+    format: frontmatter
+    fields:
+      - name: title
+        label: Nome do Documento / Edital
+        type: string
+        required: true
+      - name: category
+        label: Categoria do Documento
+        type: select
+        options:
+          - value: ata
+            label: Ata de Assembleia
+          - value: edital
+            label: Edital Oficial
+          - value: resolucao
+            label: Resolução de Congresso
+          - value: cartilha
+            label: Cartilha Informativa
+      - name: date
+        label: Data do Documento
+        type: date
+        required: true
+      - name: file_upload
+        label: Upload do Arquivo (PDF/DOC)
+        type: file
+
+  - name: paginas
+    label: Páginas Institucionais
+    description: Edite os textos fixos do site (Quem Somos, Contato, etc).
+    type: files
+    files:
+      - name: quem_somos
+        label: Página Quem Somos
+        path: quem-somos.md
+        format: frontmatter
+        fields:
+          - name: title
+            label: Título da Página
+            type: string
+          - name: historico
+            label: Histórico da CONFETRAF
+            type: rich-text
+          - name: diretoria
+            label: Membros da Diretoria Executiva
+            type: rich-text
+      - name: contato
+        label: Página de Contato
+        path: contato.md
+        format: frontmatter
+        fields:
+          - name: telefone
+            label: Telefone Institucional
+            type: string
+          - name: email
+            label: E-mail Oficial
+            type: string
+          - name: endereco
+            label: Endereço da Sede
+            type: text
